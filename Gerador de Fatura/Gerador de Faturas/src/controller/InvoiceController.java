@@ -16,6 +16,14 @@ public class InvoiceController {
             return new Invoice(bill.getName(), totalValue , tax);
         }
 
+
+        public String saveInvoice(Invoice invoice) {
+            String result = "Salvando nota fiscal no banco de dados.";
+            System.out.println(result);
+            return result;
+
+        }
+
         private Float selectTax(String serviceType){
             switch (serviceType) {
                 case "CONSULTORIA":
@@ -27,6 +35,8 @@ public class InvoiceController {
             }
 
         }
+
+
 
         private Float calculateValue(Float value, Float tax) {
             

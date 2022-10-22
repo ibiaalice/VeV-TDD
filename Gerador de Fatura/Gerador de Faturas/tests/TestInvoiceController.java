@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import controller.InvoiceController;
 import domain.entities.Bill;
+import domain.entities.Invoice;
 
 public class TestInvoiceController {
 
@@ -36,6 +37,14 @@ public class TestInvoiceController {
         assertEquals(15.0f, invoiceController.createInvoice(bill2).getTax(), 0.0f);
         assertNotEquals(25.0f, invoiceController.createInvoice(bill2).getTax(), 0.0f);
         assertNotEquals(bill, bill2);
+    }
+
+    @Test
+    public void testSaveInvoice() {
+        InvoiceController invoiceController = new InvoiceController();
+        Bill bill = new Bill("João", "Rua 1", "CONSULTORIA", 100.0f);
+        Invoice invoice = invoiceController.createInvoice(bill);
+        assertEquals("Salvando nota fiscal no banco de dados.", invoiceController.saveInvoice(invoice));
     }
     
 }
