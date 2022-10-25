@@ -1,5 +1,3 @@
-package models;
-
 public class Salary {
 
     private Employee employee;
@@ -9,7 +7,7 @@ public class Salary {
     }
 
     public double getSalary() {
-        double salary = employee.getBaseSalary();
+        double salary = employee.getSalary();
 
         switch(employee.getRole()){
             case "DESENVOLVEDOR":
@@ -40,12 +38,6 @@ public class Salary {
         }
 
         return salary;
-    }
-
-
-    @Override
-    public String toString() {
-        return "Nome: " + employee.getName() + "    Email: " + employee.getEmail() + "    Salário: " + getSalary();         
     }
     
 }

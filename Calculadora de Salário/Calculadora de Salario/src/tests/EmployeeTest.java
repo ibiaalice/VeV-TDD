@@ -3,13 +3,16 @@ import org.junit.Test;
 
 import models.Employee;
 
+
 public class EmployeeTest {
+
+    
     @Test
     public void testCreateEmployee() {
         Employee employee = new Employee("Jenny", "jenny@jenny.com", 2000.0, "DESENVOLVEDOR");
         assertEquals("Jenny", employee.getName());
-        assertEquals("jenny@hotmail.com", employee.getEmail());
-        assertEquals(2000.0, employee.getBaseSalary());
+        assertEquals("jenny@jenny.com", employee.getEmail());
+        assertEquals(2000.0, employee.getBaseSalary(), 0.0001);
         assertEquals("DESENVOLVEDOR", employee.getRole());
     }
 
@@ -18,7 +21,7 @@ public class EmployeeTest {
         Employee emp = new Employee("Mary", "mary@dba.com", 3500.0, "DBA");
         assertEquals("Mary", emp.getName());
         assertEquals("mary@dba.com", emp.getEmail());
-        assertEquals(3500.0, emp.getBaseSalary());
+        assertEquals(3500.0, emp.getBaseSalary(), 0.0001);
         assertEquals("DBA", emp.getRole());
     }
 
@@ -31,7 +34,7 @@ public class EmployeeTest {
         emp.setRole("TESTADOR");
         assertEquals("Jude", emp.getName());
         assertEquals("jude@testador.com", emp.getEmail());
-        assertEquals(3000.0, emp.getBaseSalary());
+        assertEquals(3000.0, emp.getBaseSalary(), 0.0001);
         assertEquals("TESTADOR", emp.getRole());
     }
 }
