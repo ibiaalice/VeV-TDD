@@ -1,13 +1,15 @@
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
+import models.Employee;
+
 public class EmployeeTest {
     @Test
     public void testCreateEmployee() {
         Employee employee = new Employee("Jenny", "jenny@jenny.com", 2000.0, "DESENVOLVEDOR");
         assertEquals("Jenny", employee.getName());
         assertEquals("jenny@hotmail.com", employee.getEmail());
-        assertEquals(2000, employee.getBaseSalary());
+        assertEquals(2000.0, employee.getBaseSalary());
         assertEquals("DESENVOLVEDOR", employee.getRole());
     }
 
