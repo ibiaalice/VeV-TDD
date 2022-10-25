@@ -1,1 +1,6 @@
 # VeV-TDD
+
+## Experiência com TDD
+
+- **Giovana**: De maneira geral achei a experiência com o uso do TDD positiva. Algumas das vantagens citadas no material didático foram facilmente notadas, como o fato de você estar com a especificação fresca na mente te ajudar a fazer bons testes e que atendem de fato a necessidade sem ir além disso. Criar as classes apenas depois dos testes te ajuda a se manter dentro do que foi especificado, e a não fugir do escopo. Confesso que o que foi ruim para mim foi começar o projeto já com vários erros pra consertar, isso foi um tanto estressante, mas imagino que seja uma questão de hábito.
+- **Beatriz**: Utilizar a metodologia de TDD era algo que já fazia parte da minha rotina, acredito nos princípios que regem o método e procuro sempre colocá-los em prática. Nesse sentido, utilizá-lo na disciplina foi algo mais natural para mim. Foi diferente a experiência de trabalhar junto com alguém não costumava programar dessa maneira, mas foi interessante observar como o projeto se desenvolveu. No geral, acredito ter sido uma boa experiência.
